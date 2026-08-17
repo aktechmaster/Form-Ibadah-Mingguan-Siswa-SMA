@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Ibadah Mingguan Siswa SMP IT Al-Kautsar</title>
+    <title>Form Ibadah Mingguan Siswa SMA IT Al-Kautsar</title>
     <link rel="icon" href="logosmpit.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -245,7 +245,7 @@
     <form id="main-form">
         <div class="header-card">
             <img src="logosmpit.png" alt="Logo SMP IT" onerror="this.style.display='none'">
-            <h1>Form Ibadah Mingguan<br>Siswa SMP IT Al-Kautsar</h1>
+            <h1>Form Ibadah Mingguan<br>Siswa SMA IT Al-Kautsar</h1>
             <p>Smart Input System v2.0</p>
         </div>
 
@@ -354,7 +354,7 @@
         </div>
 
         <div class="footer">
-            &copy; 2026 <span>aktechmaster</span><br>Designed & Developed by aktechmaster
+            &copy; 2026 <span>SMA IT Al-Kautsar</span><br>Designed & Developed by aktechmaster
         </div>
 
     </form>
@@ -362,7 +362,7 @@
 
 <script>
     // --- GANTI STRING INI DENGAN URL WEB APP DARI GOOGLE APPS SCRIPT ---
-    const API_URL = "https://script.google.com/macros/s/AKfycbz78M9s2I6dHtVSTgkCxZoDgdhYoD3c89SfWDTsD1hHnDB-7yxnEwEPJ0DasCOWJxgf/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycbzNfa55zT1JY9dGX57xdIjpLWraGLMaZhwkHuvxEgLEC08QT93S68ay92G8zDY-pJ09-A/exec";
 
     let dbSiswa = [];
 
@@ -386,7 +386,7 @@
         // 1. FITUR KUNCI HARI (Hanya buka hari Ahad = 0)
         // KARENA MAS SEDANG TESTING DI HARI SENIN, SAYA BIARKAN INI ANGKA 1
         // JANGAN LUPA KEMBALIKAN KE ANGKA 0 JIKA SUDAH SELESAI TESTING
-        if (today !== 0) {
+        if (today !== 1) {
             document.getElementById('lock-screen').style.display = 'block';
             return;
         }
